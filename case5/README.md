@@ -153,3 +153,21 @@ t3.cpp:13:11: note: prefix with the address-of operator to silence this warning
 ```
 
 
+## VS2022 报错
+
+```
+D:\github\unsafe_naming\case5\main.cpp(6,5): error C2365: “y0”: 重定义；以前的定义是“函数” [D:\github\unsafe_naming\case5\build\vs2
+022-x64\testbed.vcxproj]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math.h(988,76): message : 参见“y0”的声明 [D:\github
+\unsafe_naming\case5\build\vs2022-x64\testbed.vcxproj]
+D:\github\unsafe_naming\case5\main.cpp(7,5): error C2365: “y1”: 重定义；以前的定义是“函数” [D:\github\unsafe_naming\case5\build\vs2
+022-x64\testbed.vcxproj]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math.h(989,76): message : 参见“y1”的声明 [D:\github
+\unsafe_naming\case5\build\vs2022-x64\testbed.vcxproj]
+D:\github\unsafe_naming\case5\main.cpp(8,5): error C2365: “j0”: 重定义；以前的定义是“函数” [D:\github\unsafe_naming\case5\build\vs2
+022-x64\testbed.vcxproj]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\corecrt_math.h(985,76): message : 参见“j0”的声明 [D:\github
+\unsafe_naming\case5\build\vs2022-x64\testbed.vcxproj]
+D:\github\unsafe_naming\case5\main.cpp(9,5): error C2365: “j1”: 重定义；以前的定义是“函数” [D:\github\unsafe_naming\case5\build\vs2
+022-x64\testbed.vcxproj]
+```
