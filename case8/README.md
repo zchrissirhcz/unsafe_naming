@@ -1,24 +1,26 @@
-# `using namespace std` caused variable name conflict
+# case8: zcnn and std::vector on MSVC
 
-## Compile error
-```
-main.cpp:9:22: error: called object type 'int' is not a function or function pointer
-    double res = sqrt(x);
-                 ~~~~^
-1 error generated.
-```
+https://godbolt.org/z/MKexa9Yav
 
-## Solution
-
-Remove `using namespace std`.
-
-## Solution2
-
-Explicitly write `std::` before occurance of `sqrt`.
 ```cpp
-    double res = sqrt(x);
+#include <vector>
+
+namespace zcnn {
+
+int bubbleSort(std::vector<int>& data);
+
+}
 ```
 
-## Solution3
+> 命名空间 "zcnn::std" 没有成员 "vector"
 
-Renaming `sqrt` variable to other.
+Solution: replace `std::vector` with `::std::vector`:
+```cpp
+#include <vector>
+
+namespace zcnn {
+
+int bubbleSort(::std::vector<int>& data);
+
+}
+```

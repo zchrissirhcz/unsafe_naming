@@ -1,6 +1,6 @@
 # unsafe naming
 
-A collection of C/C++ compile/runtime errors due to conflict naming.
+A collection of C/C++ compile/runtime errors due to conflict naming: variables, functions, namespaces, etc.
 
 - [small](case1/README.md)
 - [ERROR](case2/README.md)
@@ -8,4 +8,5 @@ A collection of C/C++ compile/runtime errors due to conflict naming.
 - [hyper](case4/README.md)
 - [y0, y1, yn, j0, j1, jn](case5/README.md)
 - [min, max](case6/README.md)
-- [sqrt](case8/README.md)
+- [sqrt](case7/README.md)
+- [zcnn and vector](case8/README.md)
