@@ -1,6 +1,8 @@
 # unsafe naming
 
-A collection of C/C++ compile/runtime errors due to conflict naming: variables, functions, namespaces, etc.
+A collection of unsafe namings in C/C++ development:
+- C/C++ code: compile/runtime errors due to conflict naming: variables, functions, namespaces, etc
+- CMake: special chars like `#` is not allowed on Windows
 
 - [small](case1/README.md)
 - [ERROR](case2/README.md)
@@ -10,3 +12,4 @@ A collection of C/C++ compile/runtime errors due to conflict naming: variables, 
 - [min, max](case6/README.md)
 - [sqrt](case7/README.md)
 - [zcnn and vector](case8/README.md)
+- [`#` in cmake output dir](case9/README.md)
