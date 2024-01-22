@@ -12,3 +12,4 @@ A collection of unsafe namings in C/C++ files, CMake related directories, etc.
 - [zcnn and vector](case8/README.md)
 - [`#` in cmake output dir](case9/README.md)
 - [call to 'swap' is ambiguous](case10/README.md)
+- [call to 'sum' is ambiguous](case11/README.md)
